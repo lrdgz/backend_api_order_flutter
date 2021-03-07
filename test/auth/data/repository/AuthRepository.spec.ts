@@ -28,8 +28,8 @@ describe('AuthRepository', () => {
   it('should return user id when added to db', async () => {
     //arrange
     const user = {
-      name: 'John Flyn',
-      email: 'lyn@mail.com',
+      name: 'Luis Rodriguez',
+      email: 'dev@dev.com',
       password: 'pass232',
       type: 'email',
     }
