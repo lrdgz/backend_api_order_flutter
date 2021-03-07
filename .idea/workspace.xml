@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64b27b70-faa8-4f57-8dbe-83ae25a92718" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/auth/data/repository/AuthRepository.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/auth/data/repository/AuthRepository.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
     <property name="ts.external.directory.path" value="C:\Apps\node\food_ordering_backend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Mocha.AuthRepository.should return user id when added to db">
+  <component name="RunManager" selected="Mocha.SignInUseCase">
     <configuration name="AuthRepository.should return user id when added to db" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -45,7 +46,55 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="AuthRouter" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthRouter.should return 200 and token when user is found (1)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/auth/entrypoint/AuthRouter.spec.ts</test-file>
+      <test-names>
+        <name value="AuthRouter" />
+        <name value="should return 200 and token when user is found" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthRouter.should return 404 when user is not found (1)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/auth/entrypoint/AuthRouter.spec.ts</test-file>
+      <test-names>
+        <name value="AuthRouter" />
+        <name value="should return 404 when user is not found" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthRouter.should return errors" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/auth/entrypoint/AuthRouter.spec.ts</test-file>
+      <test-names>
+        <name value="AuthRouter" />
+        <name value="should return errors" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="SignInUseCase" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -54,67 +103,19 @@
       <ui>bdd</ui>
       <extra-mocha-options>--require ts-node/register</extra-mocha-options>
       <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/entrypoing/AuthRouter.spec.ts</test-file>
+      <test-file>$PROJECT_DIR$/test/auth/usecases/SignInUseCase.spec.ts</test-file>
       <test-names>
-        <name value="AuthRouter" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthRouter.should create user and return token" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/entrypoing/AuthRouter.spec.ts</test-file>
-      <test-names>
-        <name value="AuthRouter" />
-        <name value="should create user and return token" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthRouter.should return 200 and token when user is found" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/entrypoing/AuthRouter.spec.ts</test-file>
-      <test-names>
-        <name value="AuthRouter" />
-        <name value="should return 200 and token when user is found" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthRouter.should return 404 when user is not found" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/entrypoing/AuthRouter.spec.ts</test-file>
-      <test-names>
-        <name value="AuthRouter" />
-        <name value="should return 404 when user is not found" />
+        <name value="SignInUseCase" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.SignInUseCase" />
+        <item itemvalue="Mocha.AuthRouter.should return errors" />
+        <item itemvalue="Mocha.AuthRouter.should return 200 and token when user is found (1)" />
+        <item itemvalue="Mocha.AuthRouter.should return 404 when user is not found (1)" />
         <item itemvalue="Mocha.AuthRepository.should return user id when added to db" />
-        <item itemvalue="Mocha.AuthRouter.should return 200 and token when user is found" />
-        <item itemvalue="Mocha.AuthRouter.should return 404 when user is not found" />
-        <item itemvalue="Mocha.AuthRouter" />
-        <item itemvalue="Mocha.AuthRouter.should create user and return token" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +129,7 @@
       <updated>1614777880885</updated>
       <workItem from="1614777882064" duration="18641000" />
       <workItem from="1614862366532" duration="594000" />
-      <workItem from="1615124082090" duration="824000" />
+      <workItem from="1615124082090" duration="1291000" />
     </task>
     <servers />
   </component>
